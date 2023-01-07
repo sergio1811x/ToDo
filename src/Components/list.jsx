@@ -33,12 +33,12 @@ const List = (props) => {
                         )
                     })
                 }
+                {props.value.length > 0 &&
                 <Button sx={{height: '30px', width: '10px', fontSize: 25, marginTop: 3, marginLeft: 63}}
                         color="error" variant="outlined"
                         onClick={() => props.delAll()}>
-                    ✖ </Button>
+                    ✖ </Button>}
             </div>
-
         </div>
     )
 }
